@@ -100,13 +100,15 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
- <script>
+     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const menu_bar = document.querySelector(".side-bar .bars");
         const dropDown = document.querySelector(".dropdown");
+        const dropDown_name = document.querySelector(".name");
 
         menu_bar.onclick = function () {
           dropDown.classList.toggle("open");
+          dropDown_name.classList.toggle("show");
         };
       });
     </script>
